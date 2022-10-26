@@ -1,0 +1,46 @@
+body {
+    background-color:white;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-size: 60px;
+    color:black;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-size: 30px;
+    color:rgb(252, 92, 119);
+}
+
+
+div {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    line-height: 4px;
+    color:black;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 40%;
+    border-radius: 30px;
+}
+
+
+

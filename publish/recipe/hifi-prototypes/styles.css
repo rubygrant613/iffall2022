@@ -1,0 +1,13 @@
+.web {
+    width: 75%;
+    margin: 3rem;
+}
+
+.mobile {
+    width: 25%;
+    margin: 3rem;
+}
+
+h1{
+    margin: 3rem;
+}

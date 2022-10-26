@@ -1,0 +1,142 @@
+html {
+    font-family: 'Archivo Narrow', sans-serif;
+    line-height: 1.4;
+    color: white;
+}
+
+.content-area {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+}
+
+
+#description {
+    background-color: thistle;
+}
+
+#intro {
+    background-image: url(8.jpeg);
+    background-size: cover;
+    color: black;
+}
+
+#grid {
+    background-color: orange;
+}
+
+#conclusion {
+    background-color: orchid;
+}
+
+#footer {
+    background-color: lightpink;
+    height: 100px;
+}
+
+#intro .content-area {
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+    margin-top: 130px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+    line-height: 1;
+    margin-bottom: 170px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+#last {
+    margin-bottom: 40px; 
+}
+
+#sunset {
+    width: 400px;
+    height: 300px;
+    float: right;
+    margin: 0px 0px 20px 40px;
+    border: solid 1px white;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 30px;
+    row-gap: 24px;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.item {
+    display: flex;
+    width: 47%;
+}
+
+.text {
+    margin-left: 12px;
+    margin-bottom: 0;
+}
+
+h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h5 {
+    margin-bottom: 0;
+    margin-top: 6px;
+    line-height: 1.4;
+    font-size: 18px;
+    letter-spacing: -.08px;
+    font-weight: 400;
+}
+
+.lastdiv {
+    margin-bottom: 46px;
+}
+
+.conclusion {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 100px;
+}
+
+#conclusion {
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    font-size: 18px;
+}

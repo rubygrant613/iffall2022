@@ -1,0 +1,328 @@
+html {
+    color: white;
+    background-color: rgb(245, 152, 58);
+    font-family: Poppins;
+    background-image: url('challah.png');
+    background-repeat: no-repeat;
+    background-size: 800px 600px;
+    background-position: -200px -100px;
+}
+
+.challahone {
+    width: 700px;
+    height: 500px;
+}
+
+header {
+    background-image: url('challah.png');
+    background-repeat: no-repeat;
+    background-size: 800px 600px;
+    background-position: 1300px 100px;
+}
+
+body {
+    background-image: url('challah.png');
+    background-repeat: no-repeat;
+    background-size: 700px 500px;
+    background-position: 1200px 1000px;
+}
+
+@media screen and (max-width: 1500px) {
+    html {
+        background-position: -400px -100px;
+    }
+
+    header {
+        background-position: 900px 100px
+    }
+
+    body {
+        background-position: 900px 1000px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        background-position: -500px -100px;
+    }
+
+    header {
+        background-position: 700px 100px
+    }
+
+    body {
+        background-position: 700px 1000px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        background-position: -500px -100px;
+    }
+
+    header {
+        background-position: 500px 100px
+    }
+
+    body {
+        background-position: 500px 1000px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        background-position: -600px -100px;
+    }
+
+    header {
+        background-position: 200px 100px
+    }
+
+    body {
+        background-position: 200px 1000px;
+    }
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 18vw;
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 300;
+    margin: auto;
+}
+
+.title {
+    margin-top: 200px;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+.source {
+    font-size: 1rem;
+    text-align: right;
+}
+
+.description {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 50px;
+    max-width: 600px;
+    margin-left: 0;
+}
+
+.headercontainer {
+    width: 82%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .source {
+        font-size: .8rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .source {
+        font-size: .6rem;
+    }
+
+    .description {
+        font-size: .8rem;
+    }
+}
+
+h3 {
+    font-weight: 600;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    font-weight: 200;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.details {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.column1 {
+    float: left;
+    text-align: left;
+    margin: 0 70px 0 70px;
+  }
+  
+.row {
+    margin: auto;
+    display: inline-block;
+}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .column1 {
+      width: 50%; 
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .column1 {
+      width: 100%; 
+      margin: auto;
+      margin-top: 30px;
+      float: none;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 13px;
+    }
+  }
+
+.equipment {
+    margin: auto;
+    width: 75%;
+    margin-bottom: 150px;
+}  
+
+@media screen and (max-width: 900px) {
+    .equipment {
+        margin-bottom: 75px;
+    }
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+}
+
+h6 {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+    h6 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h6 {
+        font-size: 13px;
+    }
+
+    h5 {
+        font-size: 28px;
+    }
+}
+
+
+.column2 {
+    float: left;
+    width: 50%;
+    margin-bottom: 80px;
+  }
+  
+.row2 {
+    margin: auto;
+    width: 80%;
+}
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 900px) {
+    .column2 {
+      width: 100%; 
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    .sweetcrumb {
+        margin-bottom: 80px;
+    }
+
+    .othertoppings {
+        margin-bottom: 80px
+    }
+
+    .ingredientscontainer {
+        margin: auto;
+        width: 75%;
+
+    }
+  }
+
+.instructions {
+    margin: auto;
+    width: 75%;
+    margin-bottom: 80px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    object-fit: cover;
+}
+
+li {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    li {
+        font-size: 13px;
+    }
+}
+
+.leftovers {
+    margin: auto;
+    width: 75%;
+}
+
+.freeze {
+    margin: auto;
+    width: 75%;
+    margin-bottom: 200px;
+}
