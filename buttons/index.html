@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buttons — Ruby Grant</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet" type="text/css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/102c46d2e2.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    </head>
+    <style>
+
+
+			body {
+				color: #333;
+				font-family: 'Open Sans', sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+
+			main {
+				margin: 40px;
+			}
+
+			h1 {
+			 	font-size: 30px;
+			 	margin-bottom: 40px;
+			}
+
+			.button_container {
+				border: 1px solid #ddd;
+				margin: 0 10px 10px 0;
+				padding: 20px;
+				width: 300px;
+				height: 300px;
+				float: left;
+				overflow: hidden;
+				box-sizing: border-box;
+				text-align: center;
+			}
+
+
+
+			a#btn_spotify {
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 100px;
+				padding: 10px 40px 0 40px;
+				background-color: #2ebd59;
+				border: 2px solid #2ebd59;
+				color: #fff;
+				font-size: 20px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+				transition: all .5s;
+			}
+
+			a#btn_spotify:hover {
+				background-color: #fff;
+				border: 2px solid #000;
+				color: #000;
+			}
+
+			a#btn_amazon {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 60px;
+				transition: all .2s;
+			}
+
+			a#btn_amazon:hover {
+				background-color: #fc9a18;
+			}
+
+			a#btn_twitter {
+				display: inline-block;
+				height: 40px;
+				box-sizing: border-box;
+				border-radius: 4px;
+				margin: auto;
+				margin-top: 105px;
+				padding: 10px 30px 0 30px;
+				background-color: #56cdf1;
+				color: #fff;
+				font-size: 18px;
+				font-family: 'Arial', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			a#btn_twitter:hover {
+
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+				background: rgb(46,191,236); /* Old browsers */
+				background: -moz-linear-gradient(-45deg,  rgba(46,191,236,1) 0%, rgba(40,165,203,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(-45deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(135deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+			}
+
+			a#btn_indiegogo {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #eb1478;
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 30px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: -2px;
+				transition: all .2s;
+			}
+
+			a#btn_indiegogo:before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				z-index: 1;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background-color: #eb1478;
+				transition: all .5s;
+			}
+
+			a#btn_indiegogo:hover {
+				color: #fff;
+			}
+
+			a#btn_indiegogo:hover:before {
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+			}
+
+			a#btn_indiegogo span {
+				position: relative;
+				z-index: 10;
+			}
+
+            a#btn_cocacola {
+                display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 37px;
+				background-color: red;
+				border: 2px solid red;
+				color: #fff;
+				font-size: 17px;
+                font-family: "TCCC-UnityText-Regular", "TCCC-UnityText", sans-serif;
+                font-style: normal;
+				text-decoration: none;
+				transition: all .2s;
+
+            }
+
+            a#btn_cocacola:hover {
+                background-color: white;
+                color: red;
+            }
+
+            a#btn_apple {
+                display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 27px;
+				background-color: rgba(128, 128, 128, 0.336);
+				border: rgba(128, 128, 128, 0.336);
+				color: #fff;
+				font-size: 17px;
+                font-family: "TCCC-UnityText-Regular", "TCCC-UnityText", sans-serif;
+                font-style: normal;
+				text-decoration: none;
+				transition: all .2s;
+                font-size: 40px;
+            }
+
+            a#btn_apple:hover {
+                padding-top: 22px;
+                background-color: grey;
+                font-size: 50px;
+            }
+
+            a#btn_ibm {
+                display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #0f62fe;
+				font-family: 'Roboto Mono', monospace;
+				font-size: 50px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				transition: all .2s;
+            }
+
+            a#btn_ibm:before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				z-index: 1;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background-color: #0f62fe;
+				transition: all .5s;
+			}
+            
+            a#btn_ibm:hover {
+                color: #fff;
+                background-color: #0f62fe;
+            }
+
+            a#btn_harley {
+                display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+                background-color: #fff;
+                color: #fa6600;
+                font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				transition: all .2s;
+                font-size: 30px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+            a#btn_harley span {
+                margin-right: 10px;
+                margin-bottom: 20px;
+            }
+
+            a#btn_harley i {
+                font-size: 30px;
+            }
+
+            a#btn_harley:hover {
+                color: #fa6600;
+                border-radius: 50px;
+            }
+
+            a#btn_harley:hover i {
+                transform: rotate(-30deg);
+            }
+
+            a#btn_michael {
+                display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 120px;
+				color: black;
+				font-size: 20px;
+				font-weight: bold;
+                letter-spacing: 3px;
+				text-decoration: none;
+				transition: all .5s;
+                font-family: Helvetica,sans-serif;
+            }
+
+            a#btn_michael:hover {
+                letter-spacing: 8px;
+                font-size: 15px;
+                background-color: white;
+                color: black;
+            }
+
+            a#btn_cartoon {
+                display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: black;
+				font-family: 'Bebas Neue', cursive;
+				font-size: 50px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				transition: all .2s;
+                letter-spacing: 5px;
+            }
+
+            a#btn_cartoon .C {
+                background-color: black;
+                color: white;
+            }
+
+            a#btn_cartoon .N {
+                background-color: white;
+                color: black;
+            }
+           
+            a#btn_cartoon:hover .C {
+                background-color: white;
+                color: black;
+            }
+
+            a#btn_cartoon:hover .N {
+                background-color: black;
+                color: white;
+            }
+
+            a#btn_nike {
+                font-family: "Nike Futura","Helvetica Neue",Helvetica,Arial,sans-serif;
+                display: inline-block;
+				height: 60px;
+				box-sizing: border-box;
+				border-radius: 4px;
+				margin: auto;
+				margin-top: 105px;
+				padding: 10px 30px 0 30px;
+				background-color: black;
+                color: white;
+				font-size: 30px;
+				font-weight: bold;
+				text-decoration: none;
+                transition: all .5s;
+            }
+
+            a#btn_nike:hover {
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 */
+                color: #ffffff; /* Old browsers */
+                color: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6-15 */
+                color: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
+                color: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                text-shadow: 4px 4px 2px white;
+            }
+
+            a#btn_moo {
+                font-family: "Bryant MOO Pro Medium", "Trebuchet MS", Trebuchet, "Liberation Sans", sans-serif;
+                display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 40px;
+                background-color: #009870;
+                color: white;
+				font-size: 20px;
+				font-weight: bold;
+				text-decoration: none;
+                transition: all .5s;
+                text-align: center; 
+            }
+
+            a#btn_moo i {
+                margin-right: 5px;
+            }
+
+            a#btn_moo:hover {
+                background-color: white;
+                border-color: white;
+                color: #009870;
+                font-size: 30px;
+            }
+
+            a#btn_ny {
+                font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif;
+                display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 90px;
+				padding: 8px 16px;
+				background-color: #fff;
+                color: black;
+                text-decoration: none;
+                font-feature-settings: normal;
+                font-style: normal;
+                letter-spacing: normal;
+                line-break: auto;
+                line-height: 1.13em;
+                font-size: 34px;
+                font-weight: 400;
+            }
+
+            a#btn_ny:before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				z-index: 1;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background-color: black;
+				transition: all .5s;
+			}
+
+			a#btn_ny:hover {
+				color: #fff;
+			}
+
+			a#btn_ny:hover:before {
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+			}
+
+			a#btn_ny span {
+				position: relative;
+				z-index: 10;
+			}
+
+            a#btn_npr {
+                display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 100px;
+				padding: 10px 40px 0 40px;
+				color: #fff;
+				font-size: 30px;
+                font-family: "Gotham SSm",Helvetica,Arial,sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+				transition: all .5s;
+                letter-spacing: 5px;
+                text-align: center;
+            }
+
+            a#btn_npr .ntwo {
+                background-color: #D62021;
+            }
+
+            a#btn_npr .p {
+                background-color: black;
+            }
+
+            a#btn_npr .r {
+                background-color: #5076b8;
+            }
+
+            a#btn_npr:hover .ntwo {
+                background-color: #d620207b ;
+            }
+
+            a#btn_npr:hover .p {
+                background-color: rgba(0, 0, 0, 0.644);
+            }
+
+            a#btn_npr:hover .r {
+                background-color: #5076b8a9;
+            }
+
+            a#btn_instagram {
+                font-size: 60px;
+                display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 80px;
+				padding: 10px 40px 0 40px;
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff5db1+0,ef017c+100;Pink+3D+%231 */
+            }
+
+            a#btn_instagram i {
+                color: rgb(255,93,177); /* Old browsers */
+                color: -moz-linear-gradient(top, rgba(255,93,177,1) 0%, rgba(239,1,124,1) 100%); /* FF3.6-15 */
+                color: -webkit-linear-gradient(top, rgba(255,93,177,1) 0%,rgba(239,1,124,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                color: linear-gradient(to bottom, rgba(255,93,177,1) 0%,rgba(239,1,124,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#ef017c',GradientType=0 ); /* IE6-9 */
+            }
+
+            a#btn_instagram:hover i {
+                color: orangered;
+
+            }
+            
+            a#btn_oldnavy {
+                display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: navy;
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif;
+				font-size: 30px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				transition: all .2s;
+            }
+
+            a#btn_oldnavy:hover {
+                background-color: navy;
+                color: white;
+                transform: rotate(-20deg);
+            }
+
+            a#btn_fitbit {
+                display: inline-block;
+				height: 40px;
+				box-sizing: border-box;
+				border-radius: 4px;
+				margin: auto;
+				margin-top: 105px;
+				padding: 10px 30px 0 30px;
+                background-color: #00b3bd;
+				color: #fff;
+				font-size: 18px;
+				font-family: "Proxima Nova Bold",Arial,sans-serif;
+                letter-spacing: 2px;
+				font-weight: lighter;
+				text-decoration: none;
+                transition: all .2s;
+            }
+
+            a#btn_fitbit:hover {
+                color: #00b3bd;
+				background-color: #fff;
+                font-size: 50px;
+                margin-top: 95px;
+            }
+
+            a#btn_facebook {
+                display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 32px;
+				background-color: #385898;
+				border: 2px solid #385898;
+				color: #fff;
+				font-size: 70px;
+                font-weight: bold;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+                font-style: normal;
+				text-decoration: none;
+				transition: all .5s;
+            }
+
+            a#btn_facebook:hover {
+                color: #385898;
+				background-color: white;
+                border-color: white;
+                padding-top: 15px;
+            }
+
+            a#btn_gardens {
+                display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 90px;
+				padding: 10px 40px 0 40px;
+				background-color: white;
+				color: #006B36;
+				font-size: 20px;
+				font-family: "transat-text",sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+				transition: all .7s;
+                letter-spacing: 3px;
+            }
+
+            a#btn_gardens:hover {
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b4ddb4+0,83c783+17,52b152+33,008a00+67,005700+83,002400+100;Green+3D+%231 */
+                color: #b4ddb4; /* Old browsers */
+                color: -moz-linear-gradient(left,  #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6-15 */
+                color: -webkit-linear-gradient(left,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10-25,Safari5.1-6 */
+                color: linear-gradient(to right,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                color: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=1 ); /* IE6-9 */
+
+            }
+
+            a#btn_ideo {
+                font-family: TiemposFine-Semibold,"Times New Roman",serif;
+                display: inline-block;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 125px;
+                padding-top: 8px;
+				color: black;
+				font-size: 20px;
+				font-weight: bold;
+                letter-spacing: 3px;
+				text-decoration: none;
+				transition: all .5s;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            a#btn_ideo:hover {
+                text-shadow:1px 2px 3px #ffdd56;
+                font-size: 30px;
+            }
+
+            a#btn_colorrun {
+                display: block;
+				width: 150px;
+				height: 150px;
+				box-sizing: border-box;
+				border-radius: 75px;
+				margin: auto;
+				margin-top: 60px;
+				padding-top: 50px;
+                color: white;
+                font-family: Montserrat,sans-serif;
+                font-size: 25px;
+                text-decoration: none;
+                transition: all .5s;
+                background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+            }
+
+            a#btn_colorrun:hover {
+                background-image: none;
+                color: black;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+
+            a#btn_lyft {
+                display: inline-block;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 110px;
+                padding-top: 6px;
+				color: rgb(255, 0, 191);
+                font-family: LyftProUI, sans-serif;
+				font-size: 30px;
+				font-weight: bold;
+                letter-spacing: -1px;
+				text-decoration: none;
+				transition: all .2s;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            a#btn_lyft:hover {
+                display: inline-block;
+				height: 50px;
+                width: 100px;
+				box-sizing: border-box;
+				border-radius: 25px;
+                color: white;
+                background-color: rgb(255, 0, 191);
+            }
+
+            a#btn_pastaria {
+                display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #f04924;
+				font-family: Oswald;
+				font-size: 30px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				transition: all .2s;
+                font-weight: 400;
+                font-style: normal;
+                text-transform: uppercase;
+                letter-spacing: .05em;
+                line-height: 1.1em;
+            }
+
+            a#btn_pastaria:hover {
+                color: #064047;
+            }
+
+            a#btn_mollyjogger {
+                display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 110px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: rgb(0, 117, 128);
+				font-family: 'Homemade Apple', cursive;
+				font-size: 20px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				transition: all .5s;
+                font-weight: 400;
+                font-style: normal;
+                text-transform: uppercase;
+                letter-spacing: .05em;
+                line-height: 1.1em;
+            }
+
+            a#btn_mollyjogger:hover {
+                font-size: 15px;
+                color: #929064;
+            }
+            
+
+
+    </style>
+    <body>
+        <main>
+            <h1>Button Styling — Ruby Grant</h1>
+            <div class="button_container">
+				<a href="http://www.spotify.com" target="_blank" id="btn_spotify">Spotify</a>
+			</div>
+            <div class="button_container">
+				<a href="http://www.amazon.com" target="_blank" id="btn_amazon"><i class="fa fa-amazon"></i></a>
+			</div>
+            <div class="button_container">
+				<a href="http://www.twitter.com" target="_blank" id="btn_twitter">twitter</a>
+			</div>
+            <div class="button_container">
+				<a href="http://www.indiegogo.com" target="_blank" id="btn_indiegogo"><span>indiegogo</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.coca-cola.com" target="_blank" id="btn_cocacola"><span>Coca-Cola</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.apple.com" target="_blank" id="btn_apple"><i class="fa-brands fa-apple"></i></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.ibm.com/us-en?ar=1" target="_blank" id="btn_ibm"><span>IBM</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.harley-davidson.com/us/en/index.html" target="_blank" id="btn_harley"><span>Harley Davidson</span><i class="fa-solid fa-motorcycle"></i></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.michaelkors.com/" target="_blank" id="btn_michael"><span>MICHAEL KORS</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.cartoonnetwork.com/" target="_blank" id="btn_cartoon"><span class="C">C</span><span class="N">N</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.nike.com/" target="_blank" id="btn_nike"><span>NIKE</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.moo.com/us/" target="_blank" id="btn_moo"><i class="fa-solid fa-droplet"></i><span>MOO</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.newyorker.com/" target="_blank" id="btn_ny"><span>THE NEW YORKER</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.npr.org/" target="_blank" id="btn_npr"><span class="ntwo">n</span><span class="p">p</span><span class="r">r</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.instagram.com/" target="_blank" id="btn_instagram"><i class="fa-brands fa-square-instagram"></i></a>
+			</div>
+            <div class="button_container">
+				<a href="https://oldnavy.gap.com/" target="_blank" id="btn_oldnavy"><span>Old Navy</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.fitbit.com/global/us/home" target="_blank" id="btn_fitbit"><span>fitbit</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.facebook.com/" target="_blank" id="btn_facebook"><span>f</span></a>
+			</div>
+            <div class="button_container">
+				<a href="http://www.missouribotanicalgarden.org/" target="_blank" id="btn_gardens"><span>Missouri Botanical Gardens</span><i class="fa-brands fa-pagelines"></i></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.ideo.org/" target="_blank" id="btn_ideo"><span>IDEO</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://thecolorrun.com/" target="_blank" id="btn_colorrun"><span>The Color Run</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.lyft.com/" target="_blank" id="btn_lyft"><span>lyft</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.pastariadeliwine.com/" target="_blank" id="btn_pastaria"><span>Pastaria</span></a>
+			</div>
+            <div class="button_container">
+				<a href="https://www.mollyjogger.com/" target="_blank" id="btn_mollyjogger"><span>Mollyjogger</span></a>
+			</div>
+        </main>
+    </body>
+</html>
