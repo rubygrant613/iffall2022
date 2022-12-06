@@ -1,0 +1,494 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: 'Neue Kabel', sans-serif;
+    font-weight: 400;
+}
+    
+body {
+  margin: 0;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.topnav {
+  background-color: black;
+  overflow: hidden;
+  text-align: center;
+  width: 90%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 20px;
+  margin: auto;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Neue Kabel', sans-serif;                                           
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: grey;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  font-weight: 700;
+}
+
+.topnav a.madrigal {
+  font-family: 'Madrigal', sans-serif;       
+  font-size: 20px;       
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav a {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a {
+    font-size: 10px;
+    padding: 8px 12px;
+  }
+
+  .topnav a.madrigal {      
+    font-size: 15px;       
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    font-size: 8px;
+  }
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;    
+}
+
+.grid .item img {
+  aspect-ratio: 2/3;
+  margin-bottom: 15px;
+}
+
+.grid .item p {
+  margin: auto;
+  padding: 0;
+  margin-bottom: 30px;
+  width: auto;
+  display: block;
+}
+
+.cover {
+  height: 500px;
+}
+
+.header {
+    padding-left: 50px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  align-items: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Encanto {
+    object-fit: fill;
+    width: 700px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.Disney {
+    object-fit: fill;
+    width: 700px;
+    height: auto;
+    margin-bottom: -300px;
+}
+
+p {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  text-align: left;
+  width: 600px;
+  font-family: 'Neue Kabel', sans-serif;                                       
+}
+
+a#btn_stream {
+  display: inline-block;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin-top: 25px;
+  padding: 10px 40px 0px 40px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-family: 'Neue Kabel', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+a#btn_stream span {
+padding-right: 10px;
+}
+
+a#btn_stream:hover {
+font-size: 22px;
+}
+
+@media screen and (max-width: 1500px) {
+  .Encanto {
+    width: 500px;
+  }
+
+  .Disney {
+    margin-left: -100px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .Encanto {
+    width: 400px;
+  }
+
+  .Disney {
+    margin-left: -150px;
+  }
+
+  p {
+    font-size: 12px;
+    width: 400px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+    align-items: center;
+  }
+
+  p {
+    margin-top: -100px;
+  }
+
+  a#btn_stream {
+    margin-bottom: 50px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-top: 25px;
+    padding: 10px 30px 0px 30px;
+    font-size: 15px;
+  }
+
+
+}
+
+
+h1 {
+  font-family: 'Madrigal', sans-serif;
+  font-weight: 400;
+  padding-top: 50px;
+  margin-left: 75px;
+  font-size: 5vw;
+  margin-bottom: 75px;
+}
+
+.character-images {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+  object-fit: cover;
+  width:50vw;
+  height: auto;
+  float: right;
+  margin-top: 0;
+}
+
+h2 {
+  font-family: 'Neue Kabel', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 500px; */
+  font-size: 2.5rem;
+  padding: 100px;
+  margin-bottom: -100px;
+}
+
+p.character-description {
+  padding: 100px;
+  width: 500px;
+  margin-top: -180px;
+}
+
+@media screen and (max-width: 1200px) {
+  p.character-description {
+    margin-bottom: 10px;
+    width: 300px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .character-images {
+    width: 75vw;
+  }
+
+  p.character-description {
+    margin-bottom: 10px;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 30px;
+  row-gap: 24px;
+}
+
+.artgrid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 24px;
+  row-gap: 24px;
+  margin-left: 50px;
+  margin-right: 0;
+}
+
+
+
+.item {
+  width: 15%;
+}
+
+.bts {
+  display: flex;
+  width: 25%;
+}
+
+.bts img {
+  aspect-ratio: 2/2;
+}
+
+.panel {
+  margin: auto;
+  padding: 100px;
+}
+
+p.character-description#bruno {
+  margin-bottom: 0px;
+}
+
+.album-cover {
+  object-fit: cover;
+  width: 90%;
+  float: left;
+  height: auto;
+  padding-left: 50px;
+}
+
+h3 {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+h4{
+  font-weight: 400;
+  margin: auto;
+  /* margin-top: 30px; */
+  /* margin-bottom: 50px; */
+
+}
+
+@media screen and (max-width: 1200px) {
+  h3 {
+   font-size: 1em; 
+   margin-left: 10px;
+  }
+
+  h4 {
+    font-size: .8em;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .album-cover {
+    margin: auto;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.Lin1 {
+  width: 90%;
+  margin: auto;
+  padding: 0;
+  margin-left: 50px;
+}
+
+.lindescription {
+  display: block;
+  width: 75%;
+  padding: 0;
+  margin-bottom: 50px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1500px) {
+  .lindescription {
+    font-size: 1.25rem;
+  }
+
+  .Lin1 {
+    margin-top: -65px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .lindescription {
+    font-size: 1rem;
+  }
+
+  .Lin1 {
+    margin-top: -60px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .lindescription {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+#footer {
+  color: white;
+  margin-bottom: 0;
+  padding: 0;
+  
+}
+
+#footer .name {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.role {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: .8rem;
+}
+
+.fa-copyright {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 0;
+  float: left;
+}
+
+.copyright {
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.footercolumn {
+  float: left;
+  width: 25%;
+  align-items: center;
+}
+
+.footerline {
+  margin-top: 100px;
+}
+
+.description {
+  margin-left: 20px;
+  font-size: 0.8rem;
+  width: 300px;
+  float: left;
+  padding: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .name {
+    font-size: .8rem;
+  }
+
+  .role {
+    font-size: .7rem;
+  }
+
+  .footercolumn {
+    font-size: .7rem;
+  }
+
+  .description {
+    font-size: .7rem;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .copyright {
+    font-size: 0;
+    margin-bottom: 10px;
+  }
+
+  .footercolumn {
+    font-size: .5rem;
+  }
+
+  .description {
+    font-size: 0;
+  }
+  .fa-copyright {
+    font-size: 1rem;
+  }
+}
