@@ -49,6 +49,7 @@ section {
     transition: all .4s;
     text-decoration: none;
     font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
     color: rgb(0, 0, 0);
     vertical-align: top;
 }
